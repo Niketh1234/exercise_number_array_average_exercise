@@ -3,8 +3,6 @@ public class NumberAverage{
     public static String FindAverage(int[] arr)
     {
         int n = arr.length;
-        if(n == 0)
-            return "The Array is Empty";
         int total = 0;
         for(int x : arr)
         {
@@ -20,9 +18,13 @@ public class NumberAverage{
         System.out.println("Enter the number of values:");
         int n = sc.nextInt();
         int[] arr = new int[n];
-        System.out.println("Enter the values:");
-        for(int i = 0;i<n;i++)
-            arr[i] = sc.nextInt();
-        System.out.println(FindAverage(arr));
+        if(n == 0)
+            System.out.println("The Array is Empty");
+        else{
+            System.out.println("Enter the values:");
+            for(int i = 0;i<n;i++)
+                arr[i] = sc.nextInt();
+            System.out.println(FindAverage(arr));
+        }
     }
 }
