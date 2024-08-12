@@ -10,7 +10,7 @@ public class NumberAverage{
                 return "Give proper positive integer values";
             total += x;
         }
-        return String.valueOf((int)(total/n));
+        return "The average value is: "+String.valueOf((int)(total/n));
     }
     public static void main(String args[])
     {
